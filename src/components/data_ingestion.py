@@ -43,8 +43,10 @@ class DataIngestion:
             return(
                 self.data_ingestion_config.train_data_path,
                 self.data_ingestion_config.test_data_path
-
             )
+            
+
+            
 
 
         except Exception as e:
@@ -74,4 +76,3 @@ if __name__ == "__main__":
     model_trainer = ModelTrainer()
     print(model_trainer.inititate_model_training(train_arr,test_arr))
 
-    
